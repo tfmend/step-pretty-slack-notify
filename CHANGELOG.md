@@ -1,3 +1,8 @@
+## 0.2.15 (2016-08-28)
+Changes:
+
+* Add an optional message
+
 ## 0.2.14 (2015-12-07)
 Bugs Fixed:
 

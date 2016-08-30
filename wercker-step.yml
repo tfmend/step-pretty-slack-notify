@@ -22,3 +22,6 @@ properties:
   notify_on:
     type: string
     required: false
+  message:
+    type: string
+    required: false

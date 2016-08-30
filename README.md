@@ -37,6 +37,18 @@ deploy:
             webhook_url: $SLACK_WEBHOOK_URL
 ```
 
+posts deploy notification with additional message
+
+```yml
+deploy:
+    after-steps:
+        - install-packages:
+            packages: ruby
+        - wantedly/pretty-slack-notify:
+            message: "New version available for download"
+            webhook_url: $SLACK_WEBHOOK_URL
+```
+
 override channel and/or username
 
 ```yml
