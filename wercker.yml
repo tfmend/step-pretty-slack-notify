@@ -1,4 +1,4 @@
-box: wercker/rvm
+box: ruby
 build:
   steps:
     - wercker/bundle-install@1.1.1
