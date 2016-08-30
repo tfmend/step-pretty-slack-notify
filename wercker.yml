@@ -1,5 +1,11 @@
-box: ruby
+box: node
 build:
   steps:
     - wercker/bundle-install@1.1.1
+    - script:
+        name: Install node
+        code: |
+          apt-get update -y && apt-get upgrade -y
+          apt-get install ruby ruby-dev -y
+          ruby -v
     - validate-wercker-step
